@@ -70,8 +70,8 @@ const REAL = {
     { nicknames: ["Horseface"], targets: ["Stormy Daniels"] }
   ],
   compliment: [
-    { nicknames: ["Beautiful"], targets: ["Hillary Clinton"] }
-    { nicknames: ["Texas Ted"], targets: ["Ted Cruz"] }
+    { nicknames: ["Beautiful"], targets: ["Hillary Clinton"] },
+    { nicknames: ["Texas Ted","Beautiful Ted"], targets: ["Ted Cruz"] }
   ]
 };
 
