@@ -71,6 +71,7 @@ const REAL = {
   ],
   compliment: [
     { nicknames: ["Beautiful"], targets: ["Hillary Clinton"] }
+    { nicknames: ["Texas Ted"], targets: ["Ted Cruz"] }
   ]
 };
 
