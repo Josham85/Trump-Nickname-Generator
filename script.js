@@ -25,7 +25,7 @@ const REAL = {
     { nicknames: ["Jeff Flakey"], targets: ["Jeff Flake"] },
     { nicknames: ["Al Frankenstein"], targets: ["Al Franken"] },
     { nicknames: ["Birdbrain"], targets: ["Nikki Haley"] },
-    { nicknames: ["Comrade Kamala","Crazy Kamala","Jamala","Laughin’ Kamala","Lyin’s Kamala","Kamabla"], targets: ["Kamala Harris"] },
+    { nicknames: ["Comrade Kamala","Crazy Kamala","Jamala","Laughin’ Kamala","Lyin Kamala","Kamabla"], targets: ["Kamala Harris"] },
     { nicknames: ["My Little Communist","Little Communist","Mamdani the Commie"], targets: ["Zohran Mamdani"] },
     { nicknames: ["Broken Old Crow"], targets: ["Mitch McConnell"] },
     { nicknames: ["Evan McMuffin"], targets: ["Evan McMullin"] },
