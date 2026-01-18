@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trump Nickname Generator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="flagbar"></div>
+      <h1>Trump Nickname Generator</h1>
+      <p class="sub">Create The Perfect Trump Branded Nickname for Anyone</p>
+    </header>
+
+    <section class="card">
+      <div class="modes" role="radiogroup" aria-label="Mode">
+        <label class="mode">
+          <input type="radio" name="mode" value="compliment" />
+          <span>Compliment</span>
+        </label>
+        <label class="mode">
+          <input type="radio" name="mode" value="insult" checked />
+          <span>Insult</span>
+        </label>
+      </div>
+
+      <label class="label" for="fullName">Enter Full Name</label>
+      <input id="fullName" class="input" type="text" placeholder="e.g., Theodore Cruz" autocomplete="name" />
+
+      <button id="generateBtn" class="btn">Generate</button>
+
+      <div id="loading" class="loading hidden" aria-live="polite">
+        <img class="spinner" src="./animation.gif" alt="Generating" />
+        <div>
+          <div class="loadingTitle">Generating Nickname…</div>
+          <div class="loadingHint">Hold onto your hat.</div>
+        </div>
+      </div>
+
+      <div id="result" class="result hidden" aria-live="polite">
+        <div class="resultLabel">Name Generated</div>
+        <div id="nickname" class="nickname">—</div>
+
+        <div class="actions">
+          <button id="copyBtn" class="btn secondary">Copy</button>
+          <button id="shareBtn" class="btn secondary">Share</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Trump Nickname Generator</span>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
