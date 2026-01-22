@@ -290,7 +290,7 @@ elShare.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(shareText);
       elShare.textContent = "Copied!";
-      setTimeout(() => (elShare.textContent = "Share"), 900);
+      setTimeout(() => (elShare.textContent = "Share"), 1600);
     } catch {
       alert(shareText);
     }
