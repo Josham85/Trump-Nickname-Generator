@@ -86,7 +86,8 @@ const REAL = {
     // Extra additions you had later in the broken paste:
     { nicknames: ["Gulf of America"], targets: ["Gulf of Mexico"] },
     { nicknames: ["The Failing New York Times"], targets: ["New York Times","NYT"] },
-    { nicknames: ["Moonface George Conway"], targets: ["George Conway"] }
+    { nicknames: ["Moonface George Conway"], targets: ["George Conway"] },
+    { nicknames: ["N.A."], targets: ["Donald Trump","Donald J Trump","Donald J. Trump","Trump"] },
   ],
 
   compliment: [
@@ -99,7 +100,7 @@ const REAL = {
         "Very Stable Genius",
         "Greatest President Ever",
         "The Peace President",
-        "Very Good Brain",
+        "Very Good Brain Trump",
         "Acting President of Venezuela",
         "Fertilization President",
         "Father of IVF",
@@ -331,13 +332,13 @@ elShare.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(shareText);
       elShare.textContent = "Copied!";
-      setTimeout(() => (elShare.textContent = "Share"), 2500);
+      setTimeout(() => (elShare.textContent = "Share"), 4500);
     } catch {
       alert(shareText);
     }
   }
 });//
 //  script.js
-//  
+//
 //  Created by Josh Molot on 2026-01-18.
 //
