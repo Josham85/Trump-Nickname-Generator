@@ -92,8 +92,11 @@ const REAL = {
     { nicknames: ["Beautiful"], targets: ["Hillary Clinton"] },
     { nicknames: ["Texas Ted","Beautiful Ted"], targets: ["Ted Cruz"] },
 
-    // Trump self-compliments (optional but hilarious)
-    { nicknames: ["Very Stable Genius","Greatest President Ever","The Peace President"], targets: ["Donald Trump","Donald J Trump","Trump"] }
+    // Trump self-compliments
+    { nicknames: ["Very Stable Genius","Greatest President Ever","The Peace President",
+                  "Very Good Brain","Acting President of Venezuela","The Fertilization President",
+                  "The Father of IVF","Honest Don","The Tariff King","Daddy"], 
+     targets: ["Donald Trump","Donald J Trump","Trump"] }
   ]
 };
     { nicknames: ["Mini Mike"], targets: ["Michael Bloomberg"] },
@@ -103,8 +106,7 @@ const REAL = {
     { nicknames: ["Coo-coo Chow"], targets: ["Elaine Chao"] },
     { nicknames: ["Low IQ","War Hawk"], targets: ["Liz Cheney"] },
     { nicknames: ["Sloppy"], targets: ["Chris Christie"] },
-    { nicknames: ["Crazy","Crooked"], targets: ["Hillary Clinton"] },
-
+    { nicknames: ["Crazy Hillary","Crooked Hillary","Heartless Hillary"], targets: ["Hillary Clinton"] },
     { nicknames: ["Leakin’","Lyin’","Shady","Slimeball","Slippery"], targets: ["James Comey"] },
     { nicknames: ["Little Bob"], targets: ["Bob Corker"] },
     { nicknames: ["Lyin’ Ted"], targets: ["Ted Cruz","Theodore Cruz"] },
@@ -123,22 +125,22 @@ const REAL = {
     { nicknames: ["Governor Newscum","Slimey Newscum"], targets: ["Gavin Newsom","Gavin Newsome"] },
     { nicknames: ["Stupid AOC"], targets: ["Alexandria Ocasio-Cortez","AOC"] },
     { nicknames: ["Big Fat Slob"], targets: ["JB Pritzker","J.B. Pritzker"] },
-    { nicknames: ["Nervous Nancy","Crazy Nancy"], targets: ["Nancy Pelosi"] },
+    { nicknames: ["Nervous Nancy","Crazy Nancy","Sick Puppy"], targets: ["Nancy Pelosi"] },
     { nicknames: ["Little Mike"], targets: ["Mike Pence"] },
     { nicknames: ["Little Marco"], targets: ["Marco Rubio"] },
-    { nicknames: ["Crazy Bernie"], targets: ["Bernie Sanders"] },
+    { nicknames: ["Crazy Bernie","Braindead Bernie"], targets: ["Bernie Sanders"] },
     { nicknames: ["Little Ben"], targets: ["Ben Sasse"] },
     { nicknames: ["Little Adam","Adam Shit","Pencil Neck","Shifty","Watermelon Head"], targets: ["Adam Schiff"] },
     { nicknames: ["Cryin’ Chuck","Fake Tears Chuck","Great Palestinian Senator"], targets: ["Chuck Schumer"] },
     { nicknames: ["Deranged Jack"], targets: ["Jack Smith"] },
-    { nicknames: ["Marjorie Traitor Brown"], targets: ["Marjorie Taylor Greene"] },
-    { nicknames: ["Tampon Tim"], targets: ["Tim Walz"] }, // filtered adjective list will remove slur version
+    { nicknames: ["Marjorie Traitor Brown","Marjorie Traitor Greene"], targets: ["Marjorie Taylor Greene","MTG"] },
+    { nicknames: ["Tampon Tim"], targets: ["Tim Walz"] },
     { nicknames: ["Pocahontas"], targets: ["Elizabeth Warren"] },
     { nicknames: ["Low IQ Maxine"], targets: ["Maxine Waters"] },
     { nicknames: ["Governor Trudeau"], targets: ["Justin Trudeau"] },
     { nicknames: ["President Carney"], targets: ["Mark Carney"] },
     { nicknames: ["Little Peter"], targets: ["Peter Baker"] },
-    { nicknames: ["Crazy Mika","Dumb as a Rock Mika","Low IQ Mika"], targets: ["Mika Brzezinski","Mike Brzezinski"] },
+    { nicknames: ["Crazy Mika","Dumb as a Rock Mika","Low IQ Mika"], targets: ["Mika Brzezinski"] },
     { nicknames: ["Kooky Tucker"], targets: ["Tucker Carlson"] },
     { nicknames: ["Allison Cooper"], targets: ["Anderson Cooper"] },
     { nicknames: ["Fredo"], targets: ["Chris Cuomo"] },
@@ -156,11 +158,23 @@ const REAL = {
     { nicknames: ["Little Jeff"], targets: ["Jeff Zucker"] },
     { nicknames: ["Jeff Bozo"], targets: ["Jeff Bezos"] },
     { nicknames: ["Time Apple"], targets: ["Tim Cook"] },
-    { nicknames: ["Horseface"], targets: ["Stormy Daniels"] }
+    { nicknames: ["Horseface"], targets: ["Stormy Daniels"] },
+    { nicknames: ["Fat Pig","Disgusting Animal","Slob","Face Like a Dog"], targets: ["Rosie O'Donnell","Rosie O Donnell"] },
+    { nicknames: ["Pathetic Train Wreck","No Talent","Dead Man Walking"], targets: ["Stephen Colbert"] },
+    { nicknames: ["Bum","Talentless","Horrible"], targets: ["Jimmy Kimmel"] },
+    { nicknames: ["Face of a Dog"], targets: ["Gail Collins"] },
+    { nicknames: ["Piggy"], targets: ["Catherine Lucey"] },
+    { nicknames: ["51st State"], targets: ["Canada"] },
+    { nicknames: ["Iceland"], targets: ["Greenland"] },
+    { nicknames: ["Greenland"], targets: ["Iceland"] },
+    { nicknames: ["Gulf of America"], targets: ["Gulf of Mexico"] },
+    { nicknames: ["The Failing New York Times"], targets: ["New York Times","NYT"] },
+    { nicknames: ["Moonface George Conway"], targets: ["George Conway"] }
   ],
   compliment: [
     { nicknames: ["Beautiful"], targets: ["Hillary Clinton"] },
-    { nicknames: ["Texas Ted","Beautiful Ted"], targets: ["Ted Cruz"] }
+    { nicknames: ["Texas Ted","Beautiful Ted"], targets: ["Ted Cruz"] },
+    { nicknames: ["N.A."], targets:  ["Donald Trump","Donald J Trump","Trump"] }
   ]
 };
 
@@ -168,24 +182,24 @@ const REAL = {
 // NOTE: removes ableist slur from your list.
 const SYN = {
   insult: [
-    "Sloppy","Crooked","Sleepy","Slow","Mini","Fat","Moonbeam","Low Energy","Low IQ",
+    "Sloppy","Crooked","Sleepy","Slow","Mini","Fat","Piggy","Low Energy","Low IQ",
     "Crazy","Leakin’","Lyin’","Shady","Slimeball","Slimey","Slippery","Little",
     "Meatball","Sneaky","Flakey","Comrade","Laughin’","Birdbrain","Broken Old Crow",
     "Weird","Weirdo","Wacky","Stupid","Big Fat Slob","Nervous","Pencil Neck","Shifty",
     "Watermelon Head","Fake Tears","Fake","Deranged","Tampon","Goofy","Dumb as a Rock",
     "Marble Mouth","No Talent","Washed Up","Washed Up Psycho","Psycho","Sleepy Eyes",
-    "Horseface","Low Ratings","Radical Left Terrorist","Failing","Doesn’t Have the Cards"
+    "Horseface","Low Ratings","Radical Left Terrorist","Failing","Doesn’t Have the Cards","Ditzy",
+    "Pathetic Train Wreck","Bum","Horrible","Loser","Total Loser","Talentless","Pig","Fat Pig",
+    "Fat Ugly Face","Slob","Animal","Degenerate","Crude","Rude","Very Unattractive Person","Obnoxious",
+    "Ungrateful"
+    
   ],
   compliment: [
-    "Beautiful","Incredible","Fantastic","Great","Strong","Brilliant","Powerful",
-    "Tremendous","Very Smart","Wonderful","Talented","Very Nice","Classy","Stable Genius"
+    "Beautiful","Incredible","Fantastic","Great","Strong","Brilliant","Powerful","Very Good Brain",
+    "Tremendous","Very Smart","Wonderful","Talented","Very Nice","Classy","Stable Genius",
   ]
 };
 
-// A tiny blacklist for synthetic generation (keep it simple)
-const SYN_BLACKLIST = new Set([
-  "Seriously Retarded" // excluded
-]);
 
 // ---------------------------
 // 2) BUILD LOOKUP INDEX
