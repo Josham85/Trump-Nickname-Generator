@@ -6,14 +6,6 @@ const REAL = {
   insult: [
     { nicknames: ["Sloppy Steve"], targets: ["Steve Bannon"] },
     { nicknames: ["AOC of Tennessee"], targets: ["Aftyn Behn"] },
-    { nicknames: ["Crooked Joe","Joe Hiden","Sleepy Joe","Slow Joe"], targets: ["Joe Biden"] },// ---------------------------
-// 1) DATA (your list, structured)
-// ---------------------------
-
-const REAL = {
-  insult: [
-    { nicknames: ["Sloppy Steve"], targets: ["Steve Bannon"] },
-    { nicknames: ["AOC of Tennessee"], targets: ["Aftyn Behn"] },
     { nicknames: ["Crooked Joe","Joe Hiden","Sleepy Joe","Slow Joe"], targets: ["Joe Biden"] },
     { nicknames: ["Mini Mike"], targets: ["Michael Bloomberg"] },
     { nicknames: ["Dick"], targets: ["Richard *"] }, // special rule
